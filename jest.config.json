@@ -1,0 +1,11 @@
+{
+  "collectCoverage": false,
+  "coverageDirectory": "coverage/global",
+  "coverageReporters": ["text", "json"],
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "restoreMocks": true,
+  "resetMocks": true,
+  "moduleDirectories": ["node_modules", "<rootDir>"],
+  "testMatch": ["**/src/**/*.test.ts"]
+}

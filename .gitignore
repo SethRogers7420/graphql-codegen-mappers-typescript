@@ -1,0 +1,14 @@
+node_modules
+dist
+
+# Prettier
+.eslintcache
+
+# Jest
+coverage
+
+# VSCode
+.vscode
+
+# WebStorm
+.idea

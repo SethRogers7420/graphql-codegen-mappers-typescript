@@ -1,0 +1,41 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "ignorePatterns": ["./dist"],
+  "rules": {
+    "consistent-return": 2,
+    "no-else-return": 1,
+    "semi": [1, "always"],
+    "space-unary-ops": 2,
+    "no-trailing-spaces": [2, { "skipBlankLines": true }],
+    "eol-last": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["**/test/**", "*.test.*"],
+      "rules": {
+        // Allow non null assertion in tests
+        "@typescript-eslint/no-non-null-assertion": "off"
+      }
+    }
+  ],
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "es6": true
+  }
+}
