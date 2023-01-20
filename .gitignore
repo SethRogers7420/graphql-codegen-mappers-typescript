@@ -7,8 +7,8 @@ dist
 # Jest
 coverage
 
-# VSCode
-.vscode
+# VSCode - We need this checked in for yarn and prettier.
+# .vscode
 
 # WebStorm
 .idea
